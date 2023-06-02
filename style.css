@@ -1,16 +1,16 @@
 body{
     overflow-y: cover;
-    margin: -3px;
+    margin: -5px;
     overflow-x: hidden;
 }
 
 .faixa {
     display: flex;
-    width: 218vh;
+    width: 250vh;
     background-color: rgba(23, 18, 46, 0.979);
     height: 11vh;
     margin-top: -834px;
-    margin-left: -8px;
+    margin-left: -1px;
     color: aqua;
   }
 
@@ -19,7 +19,7 @@ body{
     background-image: url('/imgs/fundo2.png');
     width: 10px;
     margin-left: -10px;
-    margin-top: -8px;
+    margin-top: 1px;
 }
 
 .logo{
@@ -52,7 +52,7 @@ img{
     color: rgb(255, 255, 255);
     font-size: 25px;
     font-style: italic;
-    margin-left: 1127px;
+    margin-left: 1125px;
     margin-top: -60px;
   }
   
@@ -70,8 +70,8 @@ img{
     color: rgb(255, 255, 255);
     font-size: 25px;
     font-style: italic;
-    margin-left: 1260px;
-    margin-top: -51px;
+    margin-left: 1250px;
+    margin-top: -50px;
   }
   
   p {
