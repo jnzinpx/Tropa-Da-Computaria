@@ -24,8 +24,8 @@ body{
 
 .logo{
 display: flex;
-width: 78px;
-height: 100px;
+width: 60px;
+height: 104px;
 margin-left: -1280px;
 margin-top: -50px;
 
@@ -80,7 +80,7 @@ img{
     font-size: 30px;
     font-style: italic;
     margin-left: 430px;
-    margin-top:  90px;
+    margin-top:  55px;
   }
   
   button {
