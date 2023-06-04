@@ -3,3 +3,26 @@ body{
     background-color: rgb(42, 13, 66);
 }
 
+header ul{
+display: flex;
+gap: 460px;
+}
+
+a{
+font-size: 25px;
+color: aliceblue;
+}
+
+.cards{
+display: flex;
+gap: 482px;
+align-items: center;
+margin-left: 30px;
+
+}
+
+.cards img{
+width: 100px;
+
+}
+
