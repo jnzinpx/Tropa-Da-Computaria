@@ -1,97 +1,84 @@
-body{
-    overflow-y: cover;
-    margin: -5px;
-    overflow-x: hidden;
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.faixa {
-    display: flex;
-    width: 250vh;
-    background-color: rgba(23, 18, 46, 0.979);
-    height: 11vh;
-    margin-top: -834px;
-    margin-left: -1px;
-    color: aqua;
-  }
-
-  .fundo{
-    display: flex;
-    background-image: url('/imgs/fundo2.png');
-    width: 10px;
-    margin-left: -10px;
-    margin-top: 1px;
+.container {
+  max-width: 1250px;
 }
 
-.logo{
-display: flex;
-width: 60px;
-height: 104px;
-margin-left: -1280px;
-margin-top: -50px;
-
-}
-img{
-
-    display: flex;
-    width: 1370px;
-    margin-left: -7px;
-    margin-top: 60px;
+.flex {
+  display: flex;
 }
 
-  h1 {
-    display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    font-style: italic;
-    margin-left: 72px;
-    margin-top: 6px;
-  }
+header {
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(23, 18, 46, 0.979);
+  height: 11vh;
+}
+header nav {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header .logo {
+  width: 100%;
+  height: 7vh;
+}
+header .logo img {
+  width: auto;
+  height: 90%;
+}
+
+header ul {
+  list-style: none;
+  gap: 50px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+}
+header a {
+  color: aliceblue;
+}
+
+.fundo  {
+  background-image: url("/imgs/fundo2.png");
+}
+
+.fundo img {
+  width: 100%;
   
-  h2 {
-    display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-style: italic;
-    margin-left: 1125px;
-    margin-top: -60px;
-  }
-  
-  h3 {
-    display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-style: italic;
-    margin-left: 1000px;
-    margin-top: -50px;
-  }
-  
-  h4 {
-    display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-style: italic;
-    margin-left: 1250px;
-    margin-top: -50px;
-  }
-  
-  p {
-    display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-style: italic;
-    margin-left: 430px;
-    margin-top:  55px;
-  }
-  
-  button {
-    margin-left: 554px;
-    
-  }
-  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+}
+
+p {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: italic;
+  margin-left: 430px;
+  margin-top: 55px;
+}
+
+.cards img {
+  width: 30vh;
+  height: 110px;
+  margin-top: 700px;
+}
+
+button {
+  margin-left: 554px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900");
 
 :root {
   --text-color: hsla(210, 50%, 85%, 1);
-  --shadow-color: hsla(210, 40%, 52%, .4);
+  --shadow-color: hsla(210, 40%, 52%, 0.4);
   --btn-color: hsl(210, 80%, 42%);
   --bg-color: #141218;
 }
@@ -100,25 +87,24 @@ img{
   box-sizing: border-box;
 }
 
-
 button {
-  position:relative;
-  padding: 10px 20px;  
+  position: relative;
+  padding: 10px 20px;
   border: none;
   background: none;
   cursor: pointer;
-  
+
   font-family: "Source Code Pro";
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 30px;  
+  font-size: 30px;
   color: var(--text-color);
-  
+
   background-color: var(--btn-color);
   box-shadow: var(--shadow-color) 2px 2px 22px;
-  border-radius: 4px; 
-  z-index: 0;  
-  overflow: hidden;   
+  border-radius: 4px;
+  z-index: 0;
+  overflow: hidden;
 }
 
 button:focus {
@@ -126,22 +112,24 @@ button:focus {
   box-shadow: var(--btn-color) 2px 2px 22px;
 }
 
-.right::after, button::after {
+.right::after,
+button::after {
   content: var(--content);
   display: block;
   position: absolute;
   white-space: nowrap;
   padding: 40px 40px;
-  pointer-events:none;
+  pointer-events: none;
 }
 
-button::after{
+button::after {
   font-weight: 200;
   top: -30px;
   left: -20px;
-} 
+}
 
-.right, .left {
+.right,
+.left {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -156,34 +144,54 @@ button::after{
 .right::after {
   top: -30px;
   left: calc(-66% - 20px);
-  
+
   background-color: var(--bg-color);
-  color:transparent;
-  transition: transform .4s ease-out;
-  transform: translate(0, -90%) rotate(0deg)
+  color: transparent;
+  transition: transform 0.4s ease-out;
+  transform: translate(0, -90%) rotate(0deg);
 }
 
 button:hover .right::after {
-  transform: translate(0, -47%) rotate(0deg)
+  transform: translate(0, -47%) rotate(0deg);
 }
 
 button .right:hover::after {
-  transform: translate(0, -50%) rotate(-7deg)
+  transform: translate(0, -50%) rotate(-7deg);
 }
 
 button .left:hover ~ .right::after {
-  transform: translate(0, -50%) rotate(7deg)
+  transform: translate(0, -50%) rotate(7deg);
 }
 
 /* bubbles */
 button::before {
-  content: '';
+  content: "";
   pointer-events: none;
-  opacity: .6;
-  background:
-    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
-    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
-    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+  opacity: 0.6;
+  background: radial-gradient(
+      circle at 20% 35%,
+      transparent 0,
+      transparent 2px,
+      var(--text-color) 3px,
+      var(--text-color) 4px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 75% 44%,
+      transparent 0,
+      transparent 2px,
+      var(--text-color) 3px,
+      var(--text-color) 4px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 46% 52%,
+      transparent 0,
+      transparent 4px,
+      var(--text-color) 5px,
+      var(--text-color) 6px,
+      transparent 6px
+    );
 
   width: 100%;
   height: 300%;
@@ -202,64 +210,26 @@ button::before {
   }
 }
 
+/* adptador de resoluçao*/
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* adptador de resoluçao*/
-
-  .container {
-    /* Estilos padrão para o container */
+.container {
+  /* Estilos padrão para o container */
 }
 
 .container.small {
-    /* Estilos para resolução de tela menor (celular) */
-    background-color: yellow;
-    font-size: 16px;
+  /* Estilos para resolução de tela menor (celular) */
+  background-color: yellow;
+  font-size: 16px;
 }
 
 .container.medium {
-    /* Estilos para resolução de tela média (tablet) */
-    background-color: orange;
-    font-size: 20px;
+  /* Estilos para resolução de tela média (tablet) */
+  background-color: orange;
+  font-size: 20px;
 }
 
 .container.large {
-    /* Estilos para resolução de tela grande (desktop) */
-    background-color: blue;
-    font-size: 24px;
+  /* Estilos para resolução de tela grande (desktop) */
+  background-color: blue;
+  font-size: 24px;
 }
