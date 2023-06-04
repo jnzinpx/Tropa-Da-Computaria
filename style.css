@@ -64,7 +64,7 @@ p {
 }
 
 .cards {
-  gap: 350px;
+  gap: 370px;
   align-items: none;
   justify-content: center;
   margin-top: -220px;
@@ -72,11 +72,17 @@ p {
 }
 
 .cards img {
-  width: 180px;
+  width: 150px;
 }
 
-button {
-  margin-left: 554px;
+.botao {
+  gap: 285px;
+}
+
+.botao button{
+  margin-top: -17px;
+  margin-left: 4px;
+
 }
 
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900");
