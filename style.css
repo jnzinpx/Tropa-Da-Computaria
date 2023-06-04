@@ -73,10 +73,11 @@ p {
 
 .cards img {
   width: 150px;
+  margin-left: 10px;
 }
 
 .botao {
-  gap: 285px;
+  gap: 284px;
 }
 
 .botao button{
